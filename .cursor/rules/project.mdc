@@ -1,0 +1,40 @@
+---
+description: David DJ Roy site — stack, brand, booking, and content conventions
+alwaysApply: true
+---
+
+# David DJ Roy — Project Rules
+
+## Client
+- Stage / public name: **David D.J. Roy** (also David DJ Roy)
+- Roles: stand-up comedian, storyteller, spoken word artist, actor, booker
+- Scene: Vancouver arts / comedy / slam
+
+## Stack (STRICT)
+- Vanilla HTML5 + Vanilla JS + Tailwind via CDN only
+- No Node, npm, React, bundlers, or build tools
+- Single-page site: `index.html` with section anchors (`#about`, `#media`, `#merch`, `#book`)
+
+## Brand
+- Vibe: gritty, raw, engaging; dark and light storytelling
+- Do not copy Dickie Lakeshore colors, type, or copy
+- Colors: stage `#0c0a09`, bone `#e8e0d4`, rust `#c45c26`
+- Type: Bebas Neue (display), IBM Plex Sans (body)
+
+## Booking
+- Public address lives in **one** constant: `BOOKING_EMAIL` in `app.js`
+- Keep JSON-LD / mailto markup in sync when that address changes
+- Form builds a `mailto:` for venues, comedians, media, and other inquiries
+- Placeholder until the real address is confirmed: `booking@daviddjroy.com`
+
+## Content
+- Source of truth: `david_dj_roy_background.txt`
+- Use the exact links from that file; do not invent social URLs, quotes, or show dates
+- TikTok / Facebook / X: no URLs on file — send people to Linktree, do not invent handles
+- Merch is the Spring store (outbound link), not in-person-only
+
+## SEO
+- Canonical / OG URL: `https://daviddjroy.com/`
+- Keep Open Graph, Twitter Card, and JSON-LD `Person` in sync when contact/socials change
+- Favicon: `img/favicon.svg`
+- Optional photo: drop `img/hero.jpg` later; hero already has a type fallback

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David D.J. Roy | Comedian, Storyteller, Booker</title>
+  <meta name="description" content="David D.J. Roy is a Vancouver comedian, storyteller, spoken word artist, and booker. Raw dark-and-light stories, That Filthy Show, and Behind the Smut.">
+  <meta name="theme-color" content="#0c0a09">
+  <link rel="canonical" href="https://daviddjroy.com/">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="David D.J. Roy | Comedian, Storyteller, Booker">
+  <meta property="og:description" content="Vancouver comedian and storyteller. Book David for rooms, lineups, and nights that can hold the dark and the light.">
+  <meta property="og:url" content="https://daviddjroy.com/">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David D.J. Roy | Comedian, Storyteller, Booker">
+  <meta name="twitter:description" content="Vancouver comedian and storyteller. Book David for rooms, lineups, and nights that can hold the dark and the light.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stage: '#0c0a09',
+            bone: '#e8e0d4',
+            rust: '#c45c26',
+            ember: '#e07a3d',
+            soot: '#161310',
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['"IBM Plex Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .grain::before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      opacity: 0.18;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .nav-open #mobile-nav {
+      display: flex;
+    }
+  </style>
+
+  <script type="application/ld+json" id="person-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David D.J. Roy",
+    "alternateName": "David DJ Roy",
+    "jobTitle": "Comedian, storyteller, and booker",
+    "description": "Vancouver stand-up comedian, storyteller, spoken word artist, actor, and show booker. Founder and host of That Filthy Show.",
+    "url": "https://daviddjroy.com/",
+    "email": "mailto:booking@daviddjroy.com",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Vancouver, British Columbia"
+    },
+    "sameAs": [
+      "https://www.instagram.com/the_real_daviddjroy/",
+      "https://www.youtube.com/@WhatAStoryLive",
+      "https://open.spotify.com/artist/3Ov5tVq67xT4kMzJ3WYlao",
+      "https://linktr.ee/DavidDJRoy"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-stage text-bone font-sans antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-rust focus:text-stage focus:px-4 focus:py-2">
+    Skip to content
+  </a>
+
+  <header class="sticky top-0 z-50 border-b border-bone/10 bg-stage/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-3">
+        <img src="img/favicon.svg" alt="" class="h-9 w-9" width="36" height="36">
+        <span class="font-display text-2xl tracking-wide text-bone">David D.J. Roy</span>
+      </a>
+
+      <nav class="hidden md:block" aria-label="Main navigation">
+        <ul class="flex flex-wrap items-center gap-6 text-sm font-medium tracking-wide uppercase">
+          <li><a href="#about" class="hover:text-rust transition-colors">About</a></li>
+          <li><a href="#media" class="hover:text-rust transition-colors">Media</a></li>
+          <li><a href="#merch" class="hover:text-rust transition-colors">Merch</a></li>
+          <li>
+            <a href="#book" class="bg-rust hover:bg-ember text-stage px-4 py-2 transition-colors">
+              Book
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        id="nav-toggle"
+        type="button"
+        class="md:hidden border border-bone/30 px-3 py-2 text-xs uppercase tracking-widest"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        Menu
+      </button>
+    </div>
+    <nav id="mobile-nav" class="hidden md:hidden flex-col gap-3 px-4 pb-4 text-sm uppercase tracking-widest" aria-label="Mobile">
+      <a href="#about" class="hover:text-rust">About</a>
+      <a href="#media" class="hover:text-rust">Media</a>
+      <a href="#merch" class="hover:text-rust">Merch</a>
+      <a href="#book" class="text-rust">Book / Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="relative grain min-h-[88vh] flex items-end overflow-hidden border-b border-bone/10">
+      <img
+        src="img/hero.jpg"
+        alt="David D.J. Roy on stage"
+        class="absolute inset-0 w-full h-full object-cover object-center opacity-40"
+        onerror="this.remove()"
+      >
+      <div class="absolute inset-0 bg-gradient-to-t from-stage via-stage/70 to-stage/30"></div>
+      <div class="relative max-w-6xl mx-auto px-4 py-16 sm:py-24 w-full">
+        <p class="text-rust text-sm sm:text-base tracking-[0.25em] uppercase mb-4">Vancouver · Comedy · Story</p>
+        <h1 class="font-display text-6xl sm:text-7xl md:text-8xl leading-none text-bone max-w-4xl">
+          David D.J. Roy
+        </h1>
+        <p class="mt-4 text-lg sm:text-xl text-bone/80 max-w-2xl">
+          Stand-up comedian. Storyteller. Spoken word artist. Actor. Booker.
+          Dark and light, no varnish.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#book" class="bg-rust hover:bg-ember text-stage font-semibold px-6 py-3 transition-colors">
+            Book David
+          </a>
+          <a href="#media" class="border border-bone/40 hover:border-rust hover:text-rust px-6 py-3 transition-colors">
+            Watch stories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 sm:py-24 border-b border-bone/10">
+      <div class="max-w-6xl mx-auto px-4 grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <p class="text-rust text-sm tracking-[0.25em] uppercase mb-3">About</p>
+          <h2 class="font-display text-5xl sm:text-6xl leading-none">Raw rooms. Real stories.</h2>
+        </div>
+        <div class="lg:col-span-8 space-y-6 text-bone/85 leading-relaxed">
+          <p>
+            David D.J. Roy is a long-time fixture in the Vancouver arts scene: a stand-up comedian,
+            storyteller, spoken word artist, actor, and performer/choreographer who also books and
+            organizes comedy.
+          </p>
+          <p>
+            He has been a regular at the Vancouver Poetry Slam, delivering raw, acclaimed open-mic
+            spoken word — including <em>Homelessness</em>, <em>Feminism?</em>, and <em>Just a Job</em>.
+            He founded and hosted <strong>That Filthy Show</strong>, a comedy and variety night that
+            made room for both dark and light storytelling.
+          </p>
+          <p>
+            As a performer and choreographer with the Vancouver International Burlesque Festival,
+            and through <strong>Behind the Smut</strong> — a one-man storytelling event about his
+            years in the adult film industry, with the floor open for questions — he has made a
+            practice of talking about intense, personal material in public: adult work, homelessness,
+            hitchhiking, and the jokes that survive them.
+          </p>
+          <p>
+            Independent and short-film credits include <em>No Joke</em> (2013),
+            <em>The Vancouver B Movie Factory</em> (2013), and <em>Show Cop</em> (2015).
+          </p>
+          <p class="text-sm text-bone/60">
+            Press:
+            <a
+              href="https://www.langaravoice.ca/vancouver-comedians-embrace-storytelling/"
+              class="underline decoration-rust/60 hover:text-rust"
+              target="_blank"
+              rel="noopener"
+            >Langara Voice, 2017 — Vancouver comedians embracing storytelling</a>
+            ·
+            <a
+              href="https://piaofang.maoyan.com/celebrity?id=1736656"
+              class="underline decoration-rust/60 hover:text-rust"
+              target="_blank"
+              rel="noopener"
+            >Acting profile</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="py-16 sm:py-24 border-b border-bone/10 bg-soot">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-rust text-sm tracking-[0.25em] uppercase mb-3">Media / Videos</p>
+        <h2 class="font-display text-5xl sm:text-6xl leading-none mb-3">On tape</h2>
+        <p class="text-bone/70 max-w-2xl mb-10">
+          Slam sets, an interview from That Filthy Show, audio, and the live storytelling channel.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <figure>
+            <div class="aspect-video bg-stage border border-bone/10 overflow-hidden">
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/OkO74o_631Q"
+                title="David D.J. Roy, comedian and founder of That Filthy Show"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <figcaption class="mt-3 text-sm text-bone/70">That Filthy Show — interview / feature</figcaption>
+          </figure>
+          <figure>
+            <div class="aspect-video bg-stage border border-bone/10 overflow-hidden">
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/szajtirMdlM"
+                title="Vancouver Poetry Slam — Homelessness (2012)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <figcaption class="mt-3 text-sm text-bone/70">Vancouver Poetry Slam — <em>Homelessness</em> (2012)</figcaption>
+          </figure>
+          <figure>
+            <div class="aspect-video bg-stage border border-bone/10 overflow-hidden">
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/0YhTnpq_heo"
+                title="Vancouver Poetry Slam — Feminism? (2014)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <figcaption class="mt-3 text-sm text-bone/70">Vancouver Poetry Slam — <em>Feminism?</em> (2014)</figcaption>
+          </figure>
+          <figure>
+            <div class="aspect-video bg-stage border border-bone/10 overflow-hidden">
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/tdOj_EqRezU"
+                title="Vancouver Poetry Slam — Just a Job (2015)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <figcaption class="mt-3 text-sm text-bone/70">Vancouver Poetry Slam — <em>Just a Job</em> (2015)</figcaption>
+          </figure>
+        </div>
+
+        <ul class="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-8 text-sm">
+          <li>
+            <a href="https://www.youtube.com/@WhatAStoryLive" class="text-rust hover:text-ember underline-offset-4 hover:underline" target="_blank" rel="noopener">
+              YouTube — What A Story Live
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/3Ov5tVq67xT4kMzJ3WYlao" class="text-rust hover:text-ember underline-offset-4 hover:underline" target="_blank" rel="noopener">
+              Spotify artist profile
+            </a>
+          </li>
+          <li>
+            <a href="https://whatssofunny.libsyn.com/2012/02" class="text-rust hover:text-ember underline-offset-4 hover:underline" target="_blank" rel="noopener">
+              What’s So Funny? podcast (Feb 2012)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="merch" class="py-16 sm:py-24 border-b border-bone/10">
+      <div class="max-w-6xl mx-auto px-4 grid gap-8 lg:grid-cols-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-rust text-sm tracking-[0.25em] uppercase mb-3">Merch</p>
+          <h2 class="font-display text-5xl sm:text-6xl leading-none mb-4">Wear the night home</h2>
+          <p class="text-bone/80 max-w-xl">
+            Official David D.J. Roy merch lives on his Spring store — shirts and gear for people
+            who like their comedy a little filthy and a little true.
+          </p>
+        </div>
+        <div class="lg:col-span-5">
+          <a
+            href="https://david-dj-roy.creator-spring.com/"
+            class="inline-flex items-center justify-center w-full sm:w-auto bg-rust hover:bg-ember text-stage font-semibold px-8 py-4 transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            Shop the Spring store
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="py-16 sm:py-24">
+      <div class="max-w-6xl mx-auto px-4 grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <p class="text-rust text-sm tracking-[0.25em] uppercase mb-3">Booking &amp; Contact</p>
+          <h2 class="font-display text-5xl sm:text-6xl leading-none mb-4">Venues, comics, press</h2>
+          <p class="text-bone/80 leading-relaxed">
+            David books and organizes as well as performs. Use the form if you run a room, want
+            to work a lineup, or need a storyteller who will not flinch. Submit opens your mail
+            app with the details filled in.
+          </p>
+          <p class="mt-6 text-sm text-bone/60">
+            Prefer a hub?
+            <a href="https://linktr.ee/DavidDJRoy" class="text-rust hover:text-ember underline" target="_blank" rel="noopener">linktr.ee/DavidDJRoy</a>
+          </p>
+        </div>
+        <form id="booking-form" class="lg:col-span-7 space-y-4 bg-soot border border-bone/10 p-6 sm:p-8" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block text-sm">
+              <span class="block mb-1 text-bone/70">Name</span>
+              <input name="name" type="text" required autocomplete="name" class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust">
+            </label>
+            <label class="block text-sm">
+              <span class="block mb-1 text-bone/70">Your email</span>
+              <input name="email" type="email" required autocomplete="email" class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust">
+            </label>
+          </div>
+          <label class="block text-sm">
+            <span class="block mb-1 text-bone/70">I am a</span>
+            <select name="type" required class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust">
+              <option value="">Choose one</option>
+              <option value="venue">Venue / booker</option>
+              <option value="comedian">Comedian looking to collaborate</option>
+              <option value="media">Media / press</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block text-sm">
+              <span class="block mb-1 text-bone/70">Date <span class="text-bone/40">(optional)</span></span>
+              <input name="date" type="text" placeholder="e.g. Oct 12, 2026" class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust">
+            </label>
+            <label class="block text-sm">
+              <span class="block mb-1 text-bone/70">City <span class="text-bone/40">(optional)</span></span>
+              <input name="city" type="text" placeholder="e.g. Vancouver" class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust">
+            </label>
+          </div>
+          <label class="block text-sm">
+            <span class="block mb-1 text-bone/70">Message</span>
+            <textarea name="message" required rows="5" class="w-full bg-stage border border-bone/20 px-3 py-2 text-bone focus:outline-none focus:border-rust"></textarea>
+          </label>
+          <p id="form-status" class="text-sm text-bone/60" role="status"></p>
+          <button type="submit" class="bg-rust hover:bg-ember text-stage font-semibold px-6 py-3 transition-colors">
+            Open booking email
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-bone/10 py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="font-display text-3xl mb-4">David D.J. Roy</p>
+      <nav aria-label="Social" class="flex flex-wrap justify-center gap-5 text-sm mb-8">
+        <a href="https://www.instagram.com/the_real_daviddjroy/" class="hover:text-rust" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@WhatAStoryLive" class="hover:text-rust" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/artist/3Ov5tVq67xT4kMzJ3WYlao" class="hover:text-rust" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://linktr.ee/DavidDJRoy" class="hover:text-rust" target="_blank" rel="noopener">Linktree</a>
+      </nav>
+      <nav aria-label="Footer" class="flex flex-wrap justify-center gap-5 text-xs uppercase tracking-widest text-bone/50 mb-8">
+        <a href="#about" class="hover:text-rust">About</a>
+        <a href="#media" class="hover:text-rust">Media</a>
+        <a href="#merch" class="hover:text-rust">Merch</a>
+        <a href="#book" class="hover:text-rust">Book</a>
+      </nav>
+      <p class="text-bone/40 text-sm">
+        &copy; <span id="year"></span> David D.J. Roy. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+---
+description: CapRover CI deploy notes for david-dj-roy
+globs: "{.github/workflows/**,Dockerfile,nginx.conf,captain-definition,docs/DEPLOY-CAPROVER.md}"
+alwaysApply: false
+---
+
+# Deploy
+
+## GitHub
+- Workflow: `.github/workflows/deploy.yml` — validate + CapRover tarball on `main`
+- CapRover needs secrets: `CAPROVER_SERVER`, `CAPROVER_APP_NAME`, plus token or password
+- App name example: `david-dj-roy`
+
+## Docker / CapRover image
+- `captain-definition` → `Dockerfile` (nginx:alpine)
+- Copy static assets including `robots.txt`, `sitemap.xml`, `404.html`, and `img/`

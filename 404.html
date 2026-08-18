@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | David D.J. Roy</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stage: '#0c0a09',
+            bone: '#e8e0d4',
+            rust: '#c45c26',
+            ember: '#e07a3d',
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['"IBM Plex Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-stage text-bone font-sans min-h-screen flex items-center justify-center px-4">
+  <main class="text-center max-w-md">
+    <p class="text-rust text-sm tracking-[0.25em] uppercase mb-3">404</p>
+    <h1 class="font-display text-5xl mb-4">That bit walked off</h1>
+    <p class="text-bone/70 mb-8">No page here. Back to the mic.</p>
+    <a href="/" class="inline-block bg-rust hover:bg-ember text-stage font-semibold py-3 px-6 transition-colors">
+      Back to David D.J. Roy
+    </a>
+  </main>
+</body>
+</html>
