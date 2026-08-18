@@ -7,9 +7,13 @@ alwaysApply: false
 # Deploy
 
 ## GitHub
-- Workflow: `.github/workflows/deploy.yml` — validate + CapRover tarball on `main`
+- Source: `hackmods/david-dj-roy` (`origin`)
+- Live Pages: `DavidDJRoy/DavidDJRoy.github.io` (`pages`) — push `main` to publish
+- Workflow: `.github/workflows/deploy.yml` — validate + CapRover tarball on `main` (optional; needs CapRover secrets)
 - CapRover needs secrets: `CAPROVER_SERVER`, `CAPROVER_APP_NAME`, plus token or password
 - App name example: `david-dj-roy`
+
+See `docs/DEPLOY-GITHUB-PAGES.md`.
 
 ## Docker / CapRover image
 - `captain-definition` → `Dockerfile` (nginx:alpine)
