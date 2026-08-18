@@ -42,7 +42,7 @@ On push to `main` only, CI uploads the repo tarball to CapRover. CapRover reads 
 
 ## Booking email
 
-Set `BOOKING_EMAIL` in `app.js` to David's public inbox. Redeploy after changing it.
+`BOOKING_EMAIL` in `app.js` is `Daviddjroy@gmail.com`. Redeploy after changing it.
 
 ## Troubleshooting
 

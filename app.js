@@ -2,10 +2,10 @@
  * David D.J. Roy — site behaviour
  *
  * BOOKING_EMAIL is the public address used by the contact form, mailto links,
- * and JSON-LD. Replace the placeholder when David confirms the live inbox.
+ * and JSON-LD.
  */
 
-const BOOKING_EMAIL = 'booking@daviddjroy.com'; // TODO: replace with David's public booking address
+const BOOKING_EMAIL = 'Daviddjroy@gmail.com';
 
 const TYPE_LABELS = {
   venue: 'Venue / booker',

@@ -25,7 +25,7 @@ alwaysApply: true
 - Public address lives in **one** constant: `BOOKING_EMAIL` in `app.js`
 - Keep JSON-LD / mailto markup in sync when that address changes
 - Form builds a `mailto:` for venues, comedians, media, and other inquiries
-- Placeholder until the real address is confirmed: `booking@daviddjroy.com`
+- Live inbox: `Daviddjroy@gmail.com`
 
 ## Content
 - Source of truth: `david_dj_roy_background.txt`
