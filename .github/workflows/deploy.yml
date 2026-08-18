@@ -19,7 +19,7 @@ jobs:
 
       - name: Verify required site files
         run: |
-          for f in index.html app.js Dockerfile captain-definition nginx.conf; do
+          for f in index.html kit.html app.js Dockerfile captain-definition nginx.conf; do
             if [ ! -f "$f" ]; then
               echo "::error::Missing required file: $f"
               exit 1
@@ -34,6 +34,7 @@ jobs:
           docker run -d --name david-ci -p 18080:80 david-dj-roy:ci
           sleep 2
           curl -fsS http://localhost:18080/ | grep -q "David D.J. Roy"
+          curl -fsS http://localhost:18080/kit.html | grep -q "Electronic press kit"
           curl -fsS http://localhost:18080/app.js | grep -q "BOOKING_EMAIL"
           echo "Smoke test passed."
           docker rm -f david-ci

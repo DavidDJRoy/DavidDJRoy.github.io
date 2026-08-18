@@ -8,9 +8,10 @@
 const BOOKING_EMAIL = 'Daviddjroy@gmail.com';
 
 const TYPE_LABELS = {
-  venue: 'Venue / booker',
-  comedian: 'Comedian looking to collaborate',
+  venue: 'Booking a gig / venue',
+  casting: 'Casting / audition',
   media: 'Media / press',
+  comedian: 'Comedian looking to collaborate',
   other: 'Other',
 };
 
@@ -23,17 +24,57 @@ function setYear() {
 
 function syncBookingEmail() {
   const jsonLd = document.getElementById('person-jsonld');
-  if (!jsonLd) {
+  if (jsonLd) {
+    try {
+      const data = JSON.parse(jsonLd.textContent);
+      data.email = 'mailto:' + BOOKING_EMAIL;
+      jsonLd.textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+      console.warn('Could not update Person JSON-LD email', err);
+    }
+  }
+
+  document.querySelectorAll('[data-booking-mailto]').forEach((link) => {
+    link.setAttribute('href', 'mailto:' + BOOKING_EMAIL);
+    if (link.textContent.trim().includes('@')) {
+      link.textContent = BOOKING_EMAIL;
+    }
+  });
+}
+
+function setupCopyButtons() {
+  document.querySelectorAll('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const target = document.querySelector(btn.getAttribute('data-copy'));
+      if (!target) {
+        return;
+      }
+
+      const text = target.innerText.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        const previous = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(() => {
+          btn.textContent = previous;
+        }, 1600);
+      } catch (err) {
+        console.warn('Clipboard copy failed', err);
+        btn.textContent = 'Copy failed';
+      }
+    });
+  });
+}
+
+function setupPrintKit() {
+  const printBtn = document.getElementById('print-kit');
+  if (!printBtn) {
     return;
   }
 
-  try {
-    const data = JSON.parse(jsonLd.textContent);
-    data.email = 'mailto:' + BOOKING_EMAIL;
-    jsonLd.textContent = JSON.stringify(data, null, 2);
-  } catch (err) {
-    console.warn('Could not update Person JSON-LD email', err);
-  }
+  printBtn.addEventListener('click', () => {
+    window.print();
+  });
 }
 
 function setupMobileNav() {
@@ -118,5 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setYear();
   syncBookingEmail();
   setupMobileNav();
+  setupCopyButtons();
+  setupPrintKit();
   setupBookingForm();
 });

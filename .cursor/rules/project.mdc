@@ -13,7 +13,7 @@ alwaysApply: true
 ## Stack (STRICT)
 - Vanilla HTML5 + Vanilla JS + Tailwind via CDN only
 - No Node, npm, React, bundlers, or build tools
-- Single-page site: `index.html` with section anchors (`#about`, `#media`, `#merch`, `#book`)
+- Vanilla site: `index.html` with section anchors (`#kit`, `#about`, `#media`, `#merch`, `#book`) plus printable `kit.html` one-sheet
 
 ## Brand
 - Vibe: gritty, raw, engaging; dark and light storytelling
@@ -24,7 +24,7 @@ alwaysApply: true
 ## Booking
 - Public address lives in **one** constant: `BOOKING_EMAIL` in `app.js`
 - Keep JSON-LD / mailto markup in sync when that address changes
-- Form builds a `mailto:` for venues, comedians, media, and other inquiries
+- Form builds a `mailto:` for venues, casting, media, comedians, and other inquiries
 - Live inbox: `Daviddjroy@gmail.com`
 
 ## Content
@@ -37,4 +37,5 @@ alwaysApply: true
 - Canonical / OG URL: `https://daviddjroy.com/`
 - Keep Open Graph, Twitter Card, and JSON-LD `Person` in sync when contact/socials change
 - Favicon: `img/favicon.svg`
-- Optional photo: drop `img/hero.jpg` later; hero already has a type fallback
+- Live stills from David's own YouTube clips live in `img/still-*.jpg`; `img/hero.jpg` is the slam still for Open Graph
+- Do not invent headshots; replace stills only with photos David provides
