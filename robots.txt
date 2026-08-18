@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daviddjroy.com/sitemap.xml
+Sitemap: https://daviddjroy.github.io/sitemap.xml

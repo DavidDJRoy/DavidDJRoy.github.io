@@ -35,9 +35,9 @@ alwaysApply: true
 - Merch is the Spring store (outbound link), not in-person-only
 
 ## SEO
-- Canonical / OG URL: `https://daviddjroy.com/`
-- GitHub Pages (current live host): `https://daviddjroy.github.io/`
+- Live host / canonical: `https://daviddjroy.github.io/`
 - Keep Open Graph, Twitter Card, and JSON-LD `Person` in sync when contact/socials change
 - Favicon: `img/favicon.svg`
-- Live stills from David's own YouTube clips live in `img/still-*.jpg`; `img/hero.jpg` is the slam still for Open Graph
+- Press photo / OG image: `img/portrait.png`
+- Live stills from David's own YouTube clips live in `img/still-*.jpg`
 - Do not invent headshots; replace stills only with photos David provides
