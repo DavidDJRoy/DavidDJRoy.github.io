@@ -32,15 +32,24 @@
     };
   </script>
   <style>
-      @page {
+    @page {
       size: letter portrait;
-      margin: 0.55in;
+      margin: 0.5in;
     }
 
     @media print {
-      html, body {
+      html {
+        background: #fff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      body {
         background: #fff !important;
         color: #1a1614 !important;
+        margin: 0 !important;
+        /* Body padding is the real inset — Chrome "Margins: None" ignores @page. */
+        padding: 0.5in 0.65in 0.55in !important;
       }
 
       .no-print {
@@ -69,6 +78,11 @@
         color: #8a3f16 !important;
       }
 
+      .kit-kicker {
+        margin: 0 0 16pt !important;
+        letter-spacing: 0.16em !important;
+      }
+
       main {
         max-width: none !important;
         padding: 0 !important;
@@ -82,9 +96,10 @@
       }
 
       .kit-hero {
-        grid-template-columns: 2.55in 1fr !important;
-        gap: 18pt !important;
+        grid-template-columns: 2.35in 1fr !important;
+        gap: 22pt !important;
         align-items: start !important;
+        margin-bottom: 6pt !important;
       }
 
       .kit-hero > *,
@@ -94,9 +109,9 @@
       }
 
       .kit-photo {
-        width: 2.55in !important;
-        height: 3.2in !important;
-        max-width: 2.55in !important;
+        width: 2.35in !important;
+        height: 3in !important;
+        max-width: 2.35in !important;
         aspect-ratio: auto !important;
         object-fit: cover !important;
         object-position: center 20% !important;
@@ -106,40 +121,49 @@
       }
 
       h1 {
-        font-size: 36pt !important;
-        line-height: 0.9 !important;
-        margin: 0 !important;
+        font-size: 34pt !important;
+        line-height: 0.92 !important;
+        margin: 0 0 8pt !important;
       }
 
       h2 {
-        font-size: 16pt !important;
-        margin: 12pt 0 5pt !important;
+        font-size: 15pt !important;
+        margin: 0 0 8pt !important;
         page-break-after: avoid;
+      }
+
+      .kit-hero h2 {
+        margin-top: 14pt !important;
       }
 
       .kit-split {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        gap: 14pt !important;
-        margin-top: 12pt !important;
+        gap: 28pt !important;
+        margin-top: 20pt !important;
       }
 
       .kit-reel {
-        margin-top: 10pt !important;
+        margin-top: 20pt !important;
       }
 
       ul, ol {
         margin: 0 !important;
-        padding-left: 14pt !important;
+        padding-left: 18pt !important;
       }
 
       li, p {
         font-size: 10.5pt !important;
-        line-height: 1.4 !important;
+        line-height: 1.45 !important;
+      }
+
+      li + li {
+        margin-top: 4pt !important;
       }
 
       .kit-contact {
-        font-size: 9pt !important;
+        font-size: 9.5pt !important;
+        margin-top: 10pt !important;
       }
     }
 
